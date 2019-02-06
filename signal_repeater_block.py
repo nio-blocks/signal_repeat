@@ -15,9 +15,7 @@ class SignalRepeater(GroupBy, Block):
     version = VersionProperty('0.1.0')
     max_repeats = IntProperty(title='Max Repeats', default=-1)
     interval = TimeDeltaProperty(
-        title='Repeat Interval',
-        default=timedelta(seconds=10),
-        allow_expr=False)
+        title='Repeat Interval', default=timedelta(seconds=10))
 
     def configure(self, context):
         super().configure(context)
@@ -50,7 +48,7 @@ class SignalRepeater(GroupBy, Block):
             self.notifications[group]['num_remaining'] = repeats_remaining
             self.notifications[group]['job'] = Job(
                 target=self.notify_group,
-                delta=self.interval(),
+                delta=self.interval(signal),
                 repeatable=True,
                 group=group)
 
