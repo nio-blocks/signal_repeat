@@ -1,11 +1,11 @@
 {
-  "nio/Example": {
-    "description": "A short summary of the block.",
+  "nio/SignalRepeater": {
+    "description": "Repeat incoming signals every interval up to a certain number of times",
     "categories": [
-      ""
+      "Signal Flow"
     ],
     "tags": "",
-    "from_readme": "docs/example_block.md",
-    "from_python": "example_block.Example"
+    "from_readme": "docs/signal_repeater.md",
+    "from_python": "signal_repeater_block.SignalRepeater"
   }
 }
