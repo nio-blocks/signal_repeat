@@ -2,6 +2,6 @@
   "nio/SignalRepeater": {
     "language": "Python",
     "from_python": "signal_repeater_block.SignalRepeater",
-    "url": "git://github.com/nio-blocks/signal_repeater.git"
+    "url": "git://github.com/nio-blocks/signal_repeat.git"
   }
 }
